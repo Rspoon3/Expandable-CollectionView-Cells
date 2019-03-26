@@ -12,6 +12,8 @@
 		E07BC8E1224A8966008F6555 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BC8DF224A8966008F6555 /* Main.storyboard */; };
 		E07BC8E3224A8968008F6555 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E07BC8E2224A8968008F6555 /* Assets.xcassets */; };
 		E07BC8E6224A8968008F6555 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E07BC8E4224A8968008F6555 /* LaunchScreen.storyboard */; };
+		E07BC8EE224A8A9C008F6555 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC8ED224A8A9C008F6555 /* CustomCell.swift */; };
+		E07BC8F0224A8AFE008F6555 /* Colors Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07BC8EF224A8AFE008F6555 /* Colors Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		E07BC8E2224A8968008F6555 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E07BC8E5224A8968008F6555 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E07BC8E7224A8968008F6555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E07BC8ED224A8A9C008F6555 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		E07BC8EF224A8AFE008F6555 /* Colors Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Colors Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				E07BC8DB224A8966008F6555 /* AppDelegate.swift */,
 				E07BC8DD224A8966008F6555 /* ViewController.swift */,
+				E07BC8EF224A8AFE008F6555 /* Colors Extension.swift */,
+				E07BC8ED224A8A9C008F6555 /* CustomCell.swift */,
 				E07BC8DF224A8966008F6555 /* Main.storyboard */,
 				E07BC8E2224A8968008F6555 /* Assets.xcassets */,
 				E07BC8E4224A8968008F6555 /* LaunchScreen.storyboard */,
@@ -135,8 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E07BC8F0224A8AFE008F6555 /* Colors Extension.swift in Sources */,
 				E07BC8DE224A8966008F6555 /* ViewController.swift in Sources */,
 				E07BC8DC224A8966008F6555 /* AppDelegate.swift in Sources */,
+				E07BC8EE224A8A9C008F6555 /* CustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +293,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBS8ZBXB9U;
 				INFOPLIST_FILE = "Expandable CollectionView Cells/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,6 +312,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SBS8ZBXB9U;
 				INFOPLIST_FILE = "Expandable CollectionView Cells/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
