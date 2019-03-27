@@ -89,8 +89,14 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
     
     //MARK: CustomCellProtocol functions
     func deleteCell(indexPath: IndexPath) {
-        teams.remove(at: indexPath.item)
-        collectionView.reloadData()
+        
+        collectionView.performBatchUpdates({
+            teams.remove(at: indexPath.item)
+            collectionView.deleteItems(at: [indexPath])
+        }) { (finished) in
+            self.collectionView.reloadData()
+        }
+
     }
     
     func shrinkCell() {
